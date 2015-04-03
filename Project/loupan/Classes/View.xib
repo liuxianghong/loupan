@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LPHouseButtomView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HouseLocation03.png" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-nz-Ayd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXO-qW-owX">
+                    <rect key="frame" x="241" y="0.0" width="118" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8IW-Dw-g5k"/>
+                        <constraint firstAttribute="width" constant="118" id="K9o-7w-4ef"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="联系" image="HouseLocation05.png" backgroundImage="HouseLocation02.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="callClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="WPW-ed-9gl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvr-zf-dA1">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="收藏" image="HouseLocation07.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="collectionClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="XKO-q9-AfV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d20-ba-PjE">
+                    <rect key="frame" x="359" y="0.0" width="241" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="233" id="Uw5-V5-gS3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="分享" image="HouseLocation06.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Uw5-V5-gS3"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="shareClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="TLI-hx-8CU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lvr-zf-dA1" firstAttribute="leading" secondItem="81Z-nz-Ayd" secondAttribute="leading" id="5b2-zj-hgB"/>
+                <constraint firstAttribute="trailing" secondItem="81Z-nz-Ayd" secondAttribute="trailing" id="5je-fO-bxo"/>
+                <constraint firstItem="Lvr-zf-dA1" firstAttribute="bottom" secondItem="JXO-qW-owX" secondAttribute="bottom" id="5vl-Q8-fN8"/>
+                <constraint firstItem="d20-ba-PjE" firstAttribute="leading" secondItem="JXO-qW-owX" secondAttribute="trailing" id="9Lz-XI-BGZ"/>
+                <constraint firstItem="JXO-qW-owX" firstAttribute="top" secondItem="81Z-nz-Ayd" secondAttribute="top" id="9Y5-Fh-3d5"/>
+                <constraint firstItem="Lvr-zf-dA1" firstAttribute="top" secondItem="81Z-nz-Ayd" secondAttribute="top" id="GaJ-RX-lTe"/>
+                <constraint firstItem="d20-ba-PjE" firstAttribute="firstBaseline" secondItem="Lvr-zf-dA1" secondAttribute="baseline" id="Mdr-fb-9AA"/>
+                <constraint firstItem="81Z-nz-Ayd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z3E-a8-atp"/>
+                <constraint firstItem="JXO-qW-owX" firstAttribute="leading" secondItem="Lvr-zf-dA1" secondAttribute="trailing" constant="1" id="avN-ON-QyP"/>
+                <constraint firstAttribute="trailing" secondItem="d20-ba-PjE" secondAttribute="trailing" id="c7h-Ju-aK3"/>
+                <constraint firstItem="JXO-qW-owX" firstAttribute="centerX" secondItem="81Z-nz-Ayd" secondAttribute="centerX" id="i7u-1I-zQt"/>
+                <constraint firstAttribute="bottom" secondItem="81Z-nz-Ayd" secondAttribute="bottom" id="n3M-GU-zoN"/>
+                <constraint firstItem="81Z-nz-Ayd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qBs-3Y-ewW"/>
+                <constraint firstItem="JXO-qW-owX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tHO-fB-Xfl"/>
+                <constraint firstItem="d20-ba-PjE" firstAttribute="top" secondItem="Lvr-zf-dA1" secondAttribute="top" id="tdm-xf-X93"/>
+                <constraint firstItem="d20-ba-PjE" firstAttribute="baseline" secondItem="Lvr-zf-dA1" secondAttribute="firstBaseline" id="wvw-Fe-Ydb"/>
+                <constraint firstItem="JXO-qW-owX" firstAttribute="centerX" secondItem="81Z-nz-Ayd" secondAttribute="centerX" id="zfh-4z-4Kx"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9Y5-Fh-3d5"/>
+                    <exclude reference="i7u-1I-zQt"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="button1" destination="Lvr-zf-dA1" id="2yA-0G-5R6"/>
+                <outlet property="button2" destination="JXO-qW-owX" id="Lbh-gZ-esl"/>
+                <outlet property="button3" destination="d20-ba-PjE" id="35N-mI-6Ph"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HouseLocation02.png" width="118" height="50"/>
+        <image name="HouseLocation03.png" width="320" height="51"/>
+        <image name="HouseLocation05.png" width="25" height="25"/>
+        <image name="HouseLocation06.png" width="20" height="20"/>
+        <image name="HouseLocation07.png" width="20" height="20"/>
+    </resources>
+</document>

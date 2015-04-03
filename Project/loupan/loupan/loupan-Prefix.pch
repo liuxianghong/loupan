@@ -18,6 +18,8 @@
 
 #import "UIView+AHKit.h"
 #import "JSONKit.h"
+#import "LPMobileRequest.h"
+#import "LPUiStyle.h"
 //#import "UIImage+StrethImage.h"
 //#import "NSString+DocumentPath.h"
 

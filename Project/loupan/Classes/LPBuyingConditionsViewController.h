@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LPBuyingConditionsViewController : UIViewController
-
+@property (nonatomic) NSInteger category;
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		69C5DE4ACBE104E27978B351 /* libPods-loupan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E7DE518C0C753E00B48793 /* libPods-loupan.a */; };
+		D30B06A81ACA52690040C3FD /* LPHouseInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D30B06A71ACA52690040C3FD /* LPHouseInformationTableViewCell.m */; };
 		D32E2B531AC90C9900E2545D /* LPBuyingConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2B521AC90C9900E2545D /* LPBuyingConditionsViewController.m */; };
 		D32E2B571AC9259400E2545D /* LPSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2B561AC9259400E2545D /* LPSettingTableViewController.m */; };
 		D32E2B5B1AC925BC00E2545D /* LPSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E2B5A1AC925BC00E2545D /* LPSettingTableViewCell.m */; };
@@ -145,9 +146,9 @@
 		D385C7B61AC2FD9600E21798 /* HouseDetails03.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C68F1AC2FD9500E21798 /* HouseDetails03.png */; };
 		D385C7B71AC2FD9600E21798 /* HouseDetails03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6901AC2FD9500E21798 /* HouseDetails03@2x.png */; };
 		D385C7B81AC2FD9600E21798 /* HouseDetails03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6911AC2FD9500E21798 /* HouseDetails03@3x.png */; };
-		D385C7B91AC2FD9600E21798 /* HouseDetails04.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6921AC2FD9500E21798 /* HouseDetails04.PNG */; };
-		D385C7BA1AC2FD9600E21798 /* HouseDetails04@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6931AC2FD9500E21798 /* HouseDetails04@2x.PNG */; };
-		D385C7BB1AC2FD9600E21798 /* HouseDetails04@3x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6941AC2FD9500E21798 /* HouseDetails04@3x.PNG */; };
+		D385C7B91AC2FD9600E21798 /* HouseDetails04.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6921AC2FD9500E21798 /* HouseDetails04.png */; };
+		D385C7BA1AC2FD9600E21798 /* HouseDetails04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6931AC2FD9500E21798 /* HouseDetails04@2x.png */; };
+		D385C7BB1AC2FD9600E21798 /* HouseDetails04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6941AC2FD9500E21798 /* HouseDetails04@3x.png */; };
 		D385C7BC1AC2FD9600E21798 /* HouseDetails05.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6951AC2FD9500E21798 /* HouseDetails05.png */; };
 		D385C7BD1AC2FD9600E21798 /* HouseDetails05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6961AC2FD9500E21798 /* HouseDetails05@2x.png */; };
 		D385C7BE1AC2FD9600E21798 /* HouseDetails05@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6971AC2FD9500E21798 /* HouseDetails05@3x.png */; };
@@ -157,9 +158,9 @@
 		D385C7C21AC2FD9600E21798 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C69B1AC2FD9500E21798 /* back.png */; };
 		D385C7C31AC2FD9600E21798 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C69C1AC2FD9500E21798 /* back@2x.png */; };
 		D385C7C41AC2FD9600E21798 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C69D1AC2FD9500E21798 /* back@3x.png */; };
-		D385C7C51AC2FD9600E21798 /* HouseDetails08.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C69E1AC2FD9500E21798 /* HouseDetails08.PNG */; };
-		D385C7C61AC2FD9600E21798 /* HouseDetails08@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C69F1AC2FD9500E21798 /* HouseDetails08@2x.PNG */; };
-		D385C7C71AC2FD9600E21798 /* HouseDetails08@3x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6A01AC2FD9500E21798 /* HouseDetails08@3x.PNG */; };
+		D385C7C51AC2FD9600E21798 /* HouseDetails08.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C69E1AC2FD9500E21798 /* HouseDetails08.png */; };
+		D385C7C61AC2FD9600E21798 /* HouseDetails08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C69F1AC2FD9500E21798 /* HouseDetails08@2x.png */; };
+		D385C7C71AC2FD9600E21798 /* HouseDetails08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6A01AC2FD9500E21798 /* HouseDetails08@3x.png */; };
 		D385C7C81AC2FD9600E21798 /* HouseDetails09.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6A11AC2FD9500E21798 /* HouseDetails09.png */; };
 		D385C7C91AC2FD9600E21798 /* HouseDetails09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6A21AC2FD9500E21798 /* HouseDetails09@2x.png */; };
 		D385C7CA1AC2FD9600E21798 /* HouseDetails09@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6A31AC2FD9500E21798 /* HouseDetails09@3x.png */; };
@@ -190,9 +191,9 @@
 		D385C7E31AC2FD9600E21798 /* HouseLocation01.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6BD1AC2FD9500E21798 /* HouseLocation01.png */; };
 		D385C7E41AC2FD9600E21798 /* HouseLocation01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6BE1AC2FD9500E21798 /* HouseLocation01@2x.png */; };
 		D385C7E51AC2FD9600E21798 /* HouseLocation01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6BF1AC2FD9500E21798 /* HouseLocation01@3x.png */; };
-		D385C7E61AC2FD9600E21798 /* HouseLocation02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C01AC2FD9500E21798 /* HouseLocation02.PNG */; };
-		D385C7E71AC2FD9600E21798 /* HouseLocation02@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C11AC2FD9500E21798 /* HouseLocation02@2x.PNG */; };
-		D385C7E81AC2FD9600E21798 /* HouseLocation02@3x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C21AC2FD9500E21798 /* HouseLocation02@3x.PNG */; };
+		D385C7E61AC2FD9600E21798 /* HouseLocation02.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C01AC2FD9500E21798 /* HouseLocation02.png */; };
+		D385C7E71AC2FD9600E21798 /* HouseLocation02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C11AC2FD9500E21798 /* HouseLocation02@2x.png */; };
+		D385C7E81AC2FD9600E21798 /* HouseLocation02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C21AC2FD9500E21798 /* HouseLocation02@3x.png */; };
 		D385C7E91AC2FD9600E21798 /* HouseLocation03.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C31AC2FD9500E21798 /* HouseLocation03.png */; };
 		D385C7EA1AC2FD9600E21798 /* HouseLocation03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C41AC2FD9500E21798 /* HouseLocation03@2x.png */; };
 		D385C7EB1AC2FD9600E21798 /* HouseLocation03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6C51AC2FD9500E21798 /* HouseLocation03@3x.png */; };
@@ -205,9 +206,9 @@
 		D385C7F21AC2FD9600E21798 /* HouseLocation06.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6CC1AC2FD9500E21798 /* HouseLocation06.png */; };
 		D385C7F31AC2FD9600E21798 /* HouseLocation06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6CD1AC2FD9500E21798 /* HouseLocation06@2x.png */; };
 		D385C7F41AC2FD9600E21798 /* HouseLocation06@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6CE1AC2FD9500E21798 /* HouseLocation06@3x.png */; };
-		D385C7F51AC2FD9600E21798 /* HouseLocation07.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6CF1AC2FD9500E21798 /* HouseLocation07.PNG */; };
-		D385C7F61AC2FD9600E21798 /* HouseLocation07@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D01AC2FD9500E21798 /* HouseLocation07@2x.PNG */; };
-		D385C7F71AC2FD9600E21798 /* HouseLocation07@3x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D11AC2FD9500E21798 /* HouseLocation07@3x.PNG */; };
+		D385C7F51AC2FD9600E21798 /* HouseLocation07.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6CF1AC2FD9500E21798 /* HouseLocation07.png */; };
+		D385C7F61AC2FD9600E21798 /* HouseLocation07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D01AC2FD9500E21798 /* HouseLocation07@2x.png */; };
+		D385C7F71AC2FD9600E21798 /* HouseLocation07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D11AC2FD9500E21798 /* HouseLocation07@3x.png */; };
 		D385C7F81AC2FD9600E21798 /* LatestDeal01.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D31AC2FD9500E21798 /* LatestDeal01.png */; };
 		D385C7F91AC2FD9600E21798 /* LatestDeal01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D41AC2FD9500E21798 /* LatestDeal01@2x.png */; };
 		D385C7FA1AC2FD9600E21798 /* LatestDeal01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D385C6D51AC2FD9500E21798 /* LatestDeal01@3x.png */; };
@@ -323,6 +324,19 @@
 		D3B8934A1AC25E1700B64BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B893491AC25E1700B64BE3 /* Images.xcassets */; };
 		D3B8934D1AC25E1700B64BE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B8934B1AC25E1700B64BE3 /* LaunchScreen.xib */; };
 		D3B893591AC25E1700B64BE3 /* loupanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B893581AC25E1700B64BE3 /* loupanTests.m */; };
+		D3EC019A1ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC01991ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.m */; };
+		D3EC019D1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC019C1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.m */; };
+		D3EC01A01ACB92F300CFDE88 /* LPHouseDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC019F1ACB92F300CFDE88 /* LPHouseDetailTableViewController.m */; };
+		D3EC01A31ACBC2EC00CFDE88 /* LPPlateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC01A21ACBC2EC00CFDE88 /* LPPlateTableViewController.m */; };
+		D3EC01A61ACBE38E00CFDE88 /* LPDealRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC01A51ACBE38E00CFDE88 /* LPDealRecordTableViewController.m */; };
+		D3EC01A91ACBE9C900CFDE88 /* LPDealRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC01A81ACBE9C900CFDE88 /* LPDealRecordTableViewCell.m */; };
+		D3EC01AC1ACC010600CFDE88 /* LPDealDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EC01AB1ACC010600CFDE88 /* LPDealDetailViewController.m */; };
+		D3F1E8DC1ACCE62B00BFD699 /* LPHouseButtomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1E8DB1ACCE62B00BFD699 /* LPHouseButtomView.m */; };
+		D3F1E8DE1ACCE64C00BFD699 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F1E8DD1ACCE64C00BFD699 /* View.xib */; };
+		D3F1E8E21ACD171000BFD699 /* LPCollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1E8E11ACD171000BFD699 /* LPCollectionTableViewController.m */; };
+		D3F1E8E51ACD6E5900BFD699 /* LPH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1E8E41ACD6E5900BFD699 /* LPH5ViewController.m */; };
+		D3F1E8E91ACE6EB400BFD699 /* LPAnJieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1E8E81ACE6EB400BFD699 /* LPAnJieViewController.m */; };
+		D3F1E8EC1ACE73C300BFD699 /* LPUiStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F1E8EB1ACE73C300BFD699 /* LPUiStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,6 +353,8 @@
 		2408243917661B3B24F723F9 /* Pods-loupan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loupan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loupan/Pods-loupan.debug.xcconfig"; sourceTree = "<group>"; };
 		84169EF97588754131266D1C /* Pods-loupan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loupan.release.xcconfig"; path = "Pods/Target Support Files/Pods-loupan/Pods-loupan.release.xcconfig"; sourceTree = "<group>"; };
 		95E7DE518C0C753E00B48793 /* libPods-loupan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-loupan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30B06A61ACA52690040C3FD /* LPHouseInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHouseInformationTableViewCell.h; sourceTree = "<group>"; };
+		D30B06A71ACA52690040C3FD /* LPHouseInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHouseInformationTableViewCell.m; sourceTree = "<group>"; };
 		D32E2B511AC90C9900E2545D /* LPBuyingConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPBuyingConditionsViewController.h; sourceTree = "<group>"; };
 		D32E2B521AC90C9900E2545D /* LPBuyingConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPBuyingConditionsViewController.m; sourceTree = "<group>"; };
 		D32E2B551AC9259400E2545D /* LPSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSettingTableViewController.h; sourceTree = "<group>"; };
@@ -483,9 +499,9 @@
 		D385C68F1AC2FD9500E21798 /* HouseDetails03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails03.png; sourceTree = "<group>"; };
 		D385C6901AC2FD9500E21798 /* HouseDetails03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails03@2x.png"; sourceTree = "<group>"; };
 		D385C6911AC2FD9500E21798 /* HouseDetails03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails03@3x.png"; sourceTree = "<group>"; };
-		D385C6921AC2FD9500E21798 /* HouseDetails04.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails04.PNG; sourceTree = "<group>"; };
-		D385C6931AC2FD9500E21798 /* HouseDetails04@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails04@2x.PNG"; sourceTree = "<group>"; };
-		D385C6941AC2FD9500E21798 /* HouseDetails04@3x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails04@3x.PNG"; sourceTree = "<group>"; };
+		D385C6921AC2FD9500E21798 /* HouseDetails04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails04.png; sourceTree = "<group>"; };
+		D385C6931AC2FD9500E21798 /* HouseDetails04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails04@2x.png"; sourceTree = "<group>"; };
+		D385C6941AC2FD9500E21798 /* HouseDetails04@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails04@3x.png"; sourceTree = "<group>"; };
 		D385C6951AC2FD9500E21798 /* HouseDetails05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails05.png; sourceTree = "<group>"; };
 		D385C6961AC2FD9500E21798 /* HouseDetails05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails05@2x.png"; sourceTree = "<group>"; };
 		D385C6971AC2FD9500E21798 /* HouseDetails05@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails05@3x.png"; sourceTree = "<group>"; };
@@ -495,9 +511,9 @@
 		D385C69B1AC2FD9500E21798 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		D385C69C1AC2FD9500E21798 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		D385C69D1AC2FD9500E21798 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
-		D385C69E1AC2FD9500E21798 /* HouseDetails08.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails08.PNG; sourceTree = "<group>"; };
-		D385C69F1AC2FD9500E21798 /* HouseDetails08@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails08@2x.PNG"; sourceTree = "<group>"; };
-		D385C6A01AC2FD9500E21798 /* HouseDetails08@3x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails08@3x.PNG"; sourceTree = "<group>"; };
+		D385C69E1AC2FD9500E21798 /* HouseDetails08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails08.png; sourceTree = "<group>"; };
+		D385C69F1AC2FD9500E21798 /* HouseDetails08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails08@2x.png"; sourceTree = "<group>"; };
+		D385C6A01AC2FD9500E21798 /* HouseDetails08@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails08@3x.png"; sourceTree = "<group>"; };
 		D385C6A11AC2FD9500E21798 /* HouseDetails09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseDetails09.png; sourceTree = "<group>"; };
 		D385C6A21AC2FD9500E21798 /* HouseDetails09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails09@2x.png"; sourceTree = "<group>"; };
 		D385C6A31AC2FD9500E21798 /* HouseDetails09@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseDetails09@3x.png"; sourceTree = "<group>"; };
@@ -528,9 +544,9 @@
 		D385C6BD1AC2FD9500E21798 /* HouseLocation01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation01.png; sourceTree = "<group>"; };
 		D385C6BE1AC2FD9500E21798 /* HouseLocation01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation01@2x.png"; sourceTree = "<group>"; };
 		D385C6BF1AC2FD9500E21798 /* HouseLocation01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation01@3x.png"; sourceTree = "<group>"; };
-		D385C6C01AC2FD9500E21798 /* HouseLocation02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation02.PNG; sourceTree = "<group>"; };
-		D385C6C11AC2FD9500E21798 /* HouseLocation02@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation02@2x.PNG"; sourceTree = "<group>"; };
-		D385C6C21AC2FD9500E21798 /* HouseLocation02@3x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation02@3x.PNG"; sourceTree = "<group>"; };
+		D385C6C01AC2FD9500E21798 /* HouseLocation02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation02.png; sourceTree = "<group>"; };
+		D385C6C11AC2FD9500E21798 /* HouseLocation02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation02@2x.png"; sourceTree = "<group>"; };
+		D385C6C21AC2FD9500E21798 /* HouseLocation02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation02@3x.png"; sourceTree = "<group>"; };
 		D385C6C31AC2FD9500E21798 /* HouseLocation03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation03.png; sourceTree = "<group>"; };
 		D385C6C41AC2FD9500E21798 /* HouseLocation03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation03@2x.png"; sourceTree = "<group>"; };
 		D385C6C51AC2FD9500E21798 /* HouseLocation03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation03@3x.png"; sourceTree = "<group>"; };
@@ -543,9 +559,9 @@
 		D385C6CC1AC2FD9500E21798 /* HouseLocation06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation06.png; sourceTree = "<group>"; };
 		D385C6CD1AC2FD9500E21798 /* HouseLocation06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation06@2x.png"; sourceTree = "<group>"; };
 		D385C6CE1AC2FD9500E21798 /* HouseLocation06@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation06@3x.png"; sourceTree = "<group>"; };
-		D385C6CF1AC2FD9500E21798 /* HouseLocation07.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation07.PNG; sourceTree = "<group>"; };
-		D385C6D01AC2FD9500E21798 /* HouseLocation07@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation07@2x.PNG"; sourceTree = "<group>"; };
-		D385C6D11AC2FD9500E21798 /* HouseLocation07@3x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation07@3x.PNG"; sourceTree = "<group>"; };
+		D385C6CF1AC2FD9500E21798 /* HouseLocation07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseLocation07.png; sourceTree = "<group>"; };
+		D385C6D01AC2FD9500E21798 /* HouseLocation07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation07@2x.png"; sourceTree = "<group>"; };
+		D385C6D11AC2FD9500E21798 /* HouseLocation07@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HouseLocation07@3x.png"; sourceTree = "<group>"; };
 		D385C6D31AC2FD9500E21798 /* LatestDeal01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LatestDeal01.png; sourceTree = "<group>"; };
 		D385C6D41AC2FD9500E21798 /* LatestDeal01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LatestDeal01@2x.png"; sourceTree = "<group>"; };
 		D385C6D51AC2FD9500E21798 /* LatestDeal01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LatestDeal01@3x.png"; sourceTree = "<group>"; };
@@ -673,6 +689,31 @@
 		D3B893521AC25E1700B64BE3 /* loupanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loupanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B893571AC25E1700B64BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B893581AC25E1700B64BE3 /* loupanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loupanTests.m; sourceTree = "<group>"; };
+		D3EC01981ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHouseAreaTableViewCell.h; sourceTree = "<group>"; };
+		D3EC01991ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHouseAreaTableViewCell.m; sourceTree = "<group>"; };
+		D3EC019B1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHouseSearchTableViewCell.h; sourceTree = "<group>"; };
+		D3EC019C1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHouseSearchTableViewCell.m; sourceTree = "<group>"; };
+		D3EC019E1ACB92F300CFDE88 /* LPHouseDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHouseDetailTableViewController.h; sourceTree = "<group>"; };
+		D3EC019F1ACB92F300CFDE88 /* LPHouseDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHouseDetailTableViewController.m; sourceTree = "<group>"; };
+		D3EC01A11ACBC2EC00CFDE88 /* LPPlateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPlateTableViewController.h; sourceTree = "<group>"; };
+		D3EC01A21ACBC2EC00CFDE88 /* LPPlateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPlateTableViewController.m; sourceTree = "<group>"; };
+		D3EC01A41ACBE38E00CFDE88 /* LPDealRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDealRecordTableViewController.h; sourceTree = "<group>"; };
+		D3EC01A51ACBE38E00CFDE88 /* LPDealRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDealRecordTableViewController.m; sourceTree = "<group>"; };
+		D3EC01A71ACBE9C900CFDE88 /* LPDealRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDealRecordTableViewCell.h; sourceTree = "<group>"; };
+		D3EC01A81ACBE9C900CFDE88 /* LPDealRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDealRecordTableViewCell.m; sourceTree = "<group>"; };
+		D3EC01AA1ACC010600CFDE88 /* LPDealDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDealDetailViewController.h; sourceTree = "<group>"; };
+		D3EC01AB1ACC010600CFDE88 /* LPDealDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDealDetailViewController.m; sourceTree = "<group>"; };
+		D3F1E8DA1ACCE62B00BFD699 /* LPHouseButtomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHouseButtomView.h; sourceTree = "<group>"; };
+		D3F1E8DB1ACCE62B00BFD699 /* LPHouseButtomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHouseButtomView.m; sourceTree = "<group>"; };
+		D3F1E8DD1ACCE64C00BFD699 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		D3F1E8E01ACD171000BFD699 /* LPCollectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCollectionTableViewController.h; sourceTree = "<group>"; };
+		D3F1E8E11ACD171000BFD699 /* LPCollectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCollectionTableViewController.m; sourceTree = "<group>"; };
+		D3F1E8E31ACD6E5900BFD699 /* LPH5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPH5ViewController.h; sourceTree = "<group>"; };
+		D3F1E8E41ACD6E5900BFD699 /* LPH5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPH5ViewController.m; sourceTree = "<group>"; };
+		D3F1E8E71ACE6EB400BFD699 /* LPAnJieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPAnJieViewController.h; sourceTree = "<group>"; };
+		D3F1E8E81ACE6EB400BFD699 /* LPAnJieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPAnJieViewController.m; sourceTree = "<group>"; };
+		D3F1E8EA1ACE73C300BFD699 /* LPUiStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPUiStyle.h; sourceTree = "<group>"; };
+		D3F1E8EB1ACE73C300BFD699 /* LPUiStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPUiStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,6 +760,8 @@
 				D32E2B581AC9259C00E2545D /* Cell */,
 				D32E2B551AC9259400E2545D /* LPSettingTableViewController.h */,
 				D32E2B561AC9259400E2545D /* LPSettingTableViewController.m */,
+				D3F1E8E31ACD6E5900BFD699 /* LPH5ViewController.h */,
+				D3F1E8E41ACD6E5900BFD699 /* LPH5ViewController.m */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -749,8 +792,6 @@
 			children = (
 				D32E2B5D1AC9306900E2545D /* LPBranchNetworkTableViewCell.h */,
 				D32E2B5E1AC9306900E2545D /* LPBranchNetworkTableViewCell.m */,
-				D32E2B6A1AC9564B00E2545D /* LPImageLoopTableViewCell.h */,
-				D32E2B6B1AC9564B00E2545D /* LPImageLoopTableViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -768,9 +809,9 @@
 			children = (
 				D385C6071AC2FD9500E21798 /* BranchDetails */,
 				D385C6171AC2FD9500E21798 /* BranchNetwork */,
+				D385C62F1AC2FD9500E21798 /* BuyingMapSearch */,
 				D385C61E1AC2FD9500E21798 /* BuyingArea */,
 				D385C6221AC2FD9500E21798 /* BuyingConditions Search */,
-				D385C62F1AC2FD9500E21798 /* BuyingMapSearch */,
 				D385C6361AC2FD9500E21798 /* Collect */,
 				D385C63A1AC2FD9500E21798 /* CollectionEdit */,
 				D385C6441AC2FD9500E21798 /* CompanyProfile */,
@@ -985,9 +1026,9 @@
 				D385C68F1AC2FD9500E21798 /* HouseDetails03.png */,
 				D385C6901AC2FD9500E21798 /* HouseDetails03@2x.png */,
 				D385C6911AC2FD9500E21798 /* HouseDetails03@3x.png */,
-				D385C6921AC2FD9500E21798 /* HouseDetails04.PNG */,
-				D385C6931AC2FD9500E21798 /* HouseDetails04@2x.PNG */,
-				D385C6941AC2FD9500E21798 /* HouseDetails04@3x.PNG */,
+				D385C6921AC2FD9500E21798 /* HouseDetails04.png */,
+				D385C6931AC2FD9500E21798 /* HouseDetails04@2x.png */,
+				D385C6941AC2FD9500E21798 /* HouseDetails04@3x.png */,
 				D385C6951AC2FD9500E21798 /* HouseDetails05.png */,
 				D385C6961AC2FD9500E21798 /* HouseDetails05@2x.png */,
 				D385C6971AC2FD9500E21798 /* HouseDetails05@3x.png */,
@@ -997,9 +1038,9 @@
 				D385C69B1AC2FD9500E21798 /* back.png */,
 				D385C69C1AC2FD9500E21798 /* back@2x.png */,
 				D385C69D1AC2FD9500E21798 /* back@3x.png */,
-				D385C69E1AC2FD9500E21798 /* HouseDetails08.PNG */,
-				D385C69F1AC2FD9500E21798 /* HouseDetails08@2x.PNG */,
-				D385C6A01AC2FD9500E21798 /* HouseDetails08@3x.PNG */,
+				D385C69E1AC2FD9500E21798 /* HouseDetails08.png */,
+				D385C69F1AC2FD9500E21798 /* HouseDetails08@2x.png */,
+				D385C6A01AC2FD9500E21798 /* HouseDetails08@3x.png */,
 				D385C6A11AC2FD9500E21798 /* HouseDetails09.png */,
 				D385C6A21AC2FD9500E21798 /* HouseDetails09@2x.png */,
 				D385C6A31AC2FD9500E21798 /* HouseDetails09@3x.png */,
@@ -1037,9 +1078,9 @@
 				D385C6BD1AC2FD9500E21798 /* HouseLocation01.png */,
 				D385C6BE1AC2FD9500E21798 /* HouseLocation01@2x.png */,
 				D385C6BF1AC2FD9500E21798 /* HouseLocation01@3x.png */,
-				D385C6C01AC2FD9500E21798 /* HouseLocation02.PNG */,
-				D385C6C11AC2FD9500E21798 /* HouseLocation02@2x.PNG */,
-				D385C6C21AC2FD9500E21798 /* HouseLocation02@3x.PNG */,
+				D385C6C01AC2FD9500E21798 /* HouseLocation02.png */,
+				D385C6C11AC2FD9500E21798 /* HouseLocation02@2x.png */,
+				D385C6C21AC2FD9500E21798 /* HouseLocation02@3x.png */,
 				D385C6C31AC2FD9500E21798 /* HouseLocation03.png */,
 				D385C6C41AC2FD9500E21798 /* HouseLocation03@2x.png */,
 				D385C6C51AC2FD9500E21798 /* HouseLocation03@3x.png */,
@@ -1052,9 +1093,9 @@
 				D385C6CC1AC2FD9500E21798 /* HouseLocation06.png */,
 				D385C6CD1AC2FD9500E21798 /* HouseLocation06@2x.png */,
 				D385C6CE1AC2FD9500E21798 /* HouseLocation06@3x.png */,
-				D385C6CF1AC2FD9500E21798 /* HouseLocation07.PNG */,
-				D385C6D01AC2FD9500E21798 /* HouseLocation07@2x.PNG */,
-				D385C6D11AC2FD9500E21798 /* HouseLocation07@3x.PNG */,
+				D385C6CF1AC2FD9500E21798 /* HouseLocation07.png */,
+				D385C6D01AC2FD9500E21798 /* HouseLocation07@2x.png */,
+				D385C6D11AC2FD9500E21798 /* HouseLocation07@3x.png */,
 			);
 			path = HouseLocation;
 			sourceTree = "<group>";
@@ -1200,11 +1241,20 @@
 		D385C8671AC3EECB00E21798 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D3F1E8D91ACCE5E800BFD699 /* View */,
 				D385C86C1AC3EF0500E21798 /* Cell */,
 				D385C8681AC3EEEE00E21798 /* LPHomeViewController.h */,
 				D385C8691AC3EEEE00E21798 /* LPHomeViewController.m */,
 				D32E2B511AC90C9900E2545D /* LPBuyingConditionsViewController.h */,
 				D32E2B521AC90C9900E2545D /* LPBuyingConditionsViewController.m */,
+				D3EC019E1ACB92F300CFDE88 /* LPHouseDetailTableViewController.h */,
+				D3EC019F1ACB92F300CFDE88 /* LPHouseDetailTableViewController.m */,
+				D3EC01A11ACBC2EC00CFDE88 /* LPPlateTableViewController.h */,
+				D3EC01A21ACBC2EC00CFDE88 /* LPPlateTableViewController.m */,
+				D3EC01A41ACBE38E00CFDE88 /* LPDealRecordTableViewController.h */,
+				D3EC01A51ACBE38E00CFDE88 /* LPDealRecordTableViewController.m */,
+				D3EC01AA1ACC010600CFDE88 /* LPDealDetailViewController.h */,
+				D3EC01AB1ACC010600CFDE88 /* LPDealDetailViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -1214,6 +1264,14 @@
 			children = (
 				D385C86D1AC3EF2600E21798 /* LPHomeTableViewCell.h */,
 				D385C86E1AC3EF2600E21798 /* LPHomeTableViewCell.m */,
+				D30B06A61ACA52690040C3FD /* LPHouseInformationTableViewCell.h */,
+				D30B06A71ACA52690040C3FD /* LPHouseInformationTableViewCell.m */,
+				D3EC01981ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.h */,
+				D3EC01991ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.m */,
+				D3EC019B1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.h */,
+				D3EC019C1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.m */,
+				D3EC01A71ACBE9C900CFDE88 /* LPDealRecordTableViewCell.h */,
+				D3EC01A81ACBE9C900CFDE88 /* LPDealRecordTableViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -1300,6 +1358,12 @@
 		D3B893631AC2604400B64BE3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D32E2B6A1AC9564B00E2545D /* LPImageLoopTableViewCell.h */,
+				D32E2B6B1AC9564B00E2545D /* LPImageLoopTableViewCell.m */,
+				D3F1E8EA1ACE73C300BFD699 /* LPUiStyle.h */,
+				D3F1E8EB1ACE73C300BFD699 /* LPUiStyle.m */,
+				D3F1E8E61ACE6E9F00BFD699 /* anjie */,
+				D3F1E8DF1ACD16E600BFD699 /* Collection */,
 				D32E2B5C1AC9305100E2545D /* BranchNetwork */,
 				D32E2B541AC9256E00E2545D /* Setting */,
 				D385C8581AC3025400E21798 /* LPMainTabViewController.h */,
@@ -1308,6 +1372,34 @@
 				D385C8671AC3EECB00E21798 /* Home */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		D3F1E8D91ACCE5E800BFD699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3F1E8DA1ACCE62B00BFD699 /* LPHouseButtomView.h */,
+				D3F1E8DB1ACCE62B00BFD699 /* LPHouseButtomView.m */,
+				D3F1E8DD1ACCE64C00BFD699 /* View.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D3F1E8DF1ACD16E600BFD699 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				D3F1E8E01ACD171000BFD699 /* LPCollectionTableViewController.h */,
+				D3F1E8E11ACD171000BFD699 /* LPCollectionTableViewController.m */,
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		D3F1E8E61ACE6E9F00BFD699 /* anjie */ = {
+			isa = PBXGroup;
+			children = (
+				D3F1E8E71ACE6EB400BFD699 /* LPAnJieViewController.h */,
+				D3F1E8E81ACE6EB400BFD699 /* LPAnJieViewController.m */,
+			);
+			name = anjie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1404,7 +1496,7 @@
 				D385C80F1AC2FD9600E21798 /* MortgageCalculate06@3x.png in Resources */,
 				D385C8001AC2FD9600E21798 /* MortgageCalculate01@3x.png in Resources */,
 				D385C7E01AC2FD9600E21798 /* HouseDetails17.PNG in Resources */,
-				D385C7BB1AC2FD9600E21798 /* HouseDetails04@3x.PNG in Resources */,
+				D385C7BB1AC2FD9600E21798 /* HouseDetails04@3x.png in Resources */,
 				D385C7861AC2FD9600E21798 /* Home08.png in Resources */,
 				D385C7621AC2FD9600E21798 /* Collect01.png in Resources */,
 				D385C7A91AC2FD9600E21798 /* Tab_5C@3x.png in Resources */,
@@ -1482,7 +1574,7 @@
 				D385C7AD1AC2FD9600E21798 /* Home21.png in Resources */,
 				D385C8181AC2FD9600E21798 /* MortgageCalculate09@3x.png in Resources */,
 				D385C7481AC2FD9600E21798 /* BranchNetwork01@2x.png in Resources */,
-				D385C7B91AC2FD9600E21798 /* HouseDetails04.PNG in Resources */,
+				D385C7B91AC2FD9600E21798 /* HouseDetails04.png in Resources */,
 				D385C8301AC2FD9600E21798 /* MortgageResults04@3x.png in Resources */,
 				D385C7761AC2FD9600E21798 /* Home02@3x.png in Resources */,
 				D385C8141AC2FD9600E21798 /* MortgageCalculate08@2x.png in Resources */,
@@ -1527,12 +1619,13 @@
 				D385C8131AC2FD9600E21798 /* MortgageCalculate08.png in Resources */,
 				D385C8641AC3DB0D00E21798 /* Home02_R.png in Resources */,
 				D385C77F1AC2FD9600E21798 /* Home05@3x.png in Resources */,
-				D385C7F71AC2FD9600E21798 /* HouseLocation07@3x.PNG in Resources */,
+				D385C7F71AC2FD9600E21798 /* HouseLocation07@3x.png in Resources */,
 				D385C7C81AC2FD9600E21798 /* HouseDetails09.png in Resources */,
 				D385C81E1AC2FD9600E21798 /* MortgageRates02@3x.png in Resources */,
 				D385C76C1AC2FD9600E21798 /* CollectionEdit 03@2x.PNG in Resources */,
 				D385C7431AC2FD9600E21798 /* BranchDetails04@3x.png in Resources */,
-				D385C7E81AC2FD9600E21798 /* HouseLocation02@3x.PNG in Resources */,
+				D385C7E81AC2FD9600E21798 /* HouseLocation02@3x.png in Resources */,
+				D3F1E8DE1ACCE64C00BFD699 /* View.xib in Resources */,
 				D385C8061AC2FD9600E21798 /* MortgageCalculate03@3x.png in Resources */,
 				D385C7B11AC2FD9600E21798 /* HouseDetails01@2x.png in Resources */,
 				D385C7A01AC2FD9600E21798 /* Tab_3C@3x.png in Resources */,
@@ -1550,7 +1643,7 @@
 				D385C7981AC2FD9600E21798 /* Tab_2C.png in Resources */,
 				D385C7B81AC2FD9600E21798 /* HouseDetails03@3x.png in Resources */,
 				D385C75D1AC2FD9600E21798 /* BuyingMapSearch01@2x.PNG in Resources */,
-				D385C7C51AC2FD9600E21798 /* HouseDetails08.PNG in Resources */,
+				D385C7C51AC2FD9600E21798 /* HouseDetails08.png in Resources */,
 				D385C87F1AC526D300E21798 /* 2.jpg in Resources */,
 				D385C7871AC2FD9600E21798 /* Home08@2x.png in Resources */,
 				D385C7E21AC2FD9600E21798 /* HouseDetails17@3x.PNG in Resources */,
@@ -1572,7 +1665,7 @@
 				D385C7921AC2FD9600E21798 /* Tab_1.png in Resources */,
 				D385C79E1AC2FD9600E21798 /* Tab_3C.png in Resources */,
 				D385C7B61AC2FD9600E21798 /* HouseDetails03.png in Resources */,
-				D385C7E61AC2FD9600E21798 /* HouseLocation02.PNG in Resources */,
+				D385C7E61AC2FD9600E21798 /* HouseLocation02.png in Resources */,
 				D385C7A41AC2FD9600E21798 /* Tab_4C.png in Resources */,
 				D385C8521AC2FD9600E21798 /* SetUp03.PNG in Resources */,
 				D385C7521AC2FD9600E21798 /* BuyingConditions Search01@3x.png in Resources */,
@@ -1592,7 +1685,7 @@
 				D385C8431AC2FD9600E21798 /* Plate05.png in Resources */,
 				D385C7721AC2FD9600E21798 /* Home01.png in Resources */,
 				D385C8801AC526D300E21798 /* 3.jpg in Resources */,
-				D385C7C61AC2FD9600E21798 /* HouseDetails08@2x.PNG in Resources */,
+				D385C7C61AC2FD9600E21798 /* HouseDetails08@2x.png in Resources */,
 				D385C7461AC2FD9600E21798 /* BranchDetails05@3x.png in Resources */,
 				D385C78F1AC2FD9600E21798 /* Tab_1C.png in Resources */,
 				D385C7C01AC2FD9600E21798 /* HouseDetails06@2x.png in Resources */,
@@ -1625,7 +1718,7 @@
 				D385C7801AC2FD9600E21798 /* Home06.png in Resources */,
 				D385C82F1AC2FD9600E21798 /* MortgageResults04@2x.png in Resources */,
 				D385C87E1AC526D300E21798 /* 1.jpg in Resources */,
-				D385C7F61AC2FD9600E21798 /* HouseLocation07@2x.PNG in Resources */,
+				D385C7F61AC2FD9600E21798 /* HouseLocation07@2x.png in Resources */,
 				D385C7671AC2FD9600E21798 /* CollectionEdit 01@3x.png in Resources */,
 				D385C7901AC2FD9600E21798 /* Tab_1C@2x.png in Resources */,
 				D385C78C1AC2FD9600E21798 /* Home10.png in Resources */,
@@ -1638,7 +1731,7 @@
 				D385C7F41AC2FD9600E21798 /* HouseLocation06@3x.png in Resources */,
 				D385C7411AC2FD9600E21798 /* BranchDetails04.png in Resources */,
 				D385C7771AC2FD9600E21798 /* Home03.png in Resources */,
-				D385C7F51AC2FD9600E21798 /* HouseLocation07.PNG in Resources */,
+				D385C7F51AC2FD9600E21798 /* HouseLocation07.png in Resources */,
 				D385C7E11AC2FD9600E21798 /* HouseDetails17@2x.PNG in Resources */,
 				D385C7911AC2FD9600E21798 /* Tab_1C@3x.png in Resources */,
 				D385C76E1AC2FD9600E21798 /* CompanyProfile01.png in Resources */,
@@ -1652,7 +1745,7 @@
 				D385C7A51AC2FD9600E21798 /* Tab_4C@2x.png in Resources */,
 				D385C8071AC2FD9600E21798 /* MortgageCalculate04.png in Resources */,
 				D385C7D61AC2FD9600E21798 /* HouseDetails13@3x.png in Resources */,
-				D385C7E71AC2FD9600E21798 /* HouseLocation02@2x.PNG in Resources */,
+				D385C7E71AC2FD9600E21798 /* HouseLocation02@2x.png in Resources */,
 				D385C7701AC2FD9600E21798 /* CompanyProfile01@3x.png in Resources */,
 				D385C79C1AC2FD9600E21798 /* Tab_3@2x.png in Resources */,
 				D3B8934D1AC25E1700B64BE3 /* LaunchScreen.xib in Resources */,
@@ -1670,7 +1763,7 @@
 				D385C8381AC2FD9600E21798 /* Plate01@2x.png in Resources */,
 				D385C7691AC2FD9600E21798 /* CollectionEdit 02@2x.png in Resources */,
 				D385C7A81AC2FD9600E21798 /* Tab_5C@2x.png in Resources */,
-				D385C7C71AC2FD9600E21798 /* HouseDetails08@3x.PNG in Resources */,
+				D385C7C71AC2FD9600E21798 /* HouseDetails08@3x.png in Resources */,
 				D385C7941AC2FD9600E21798 /* Tab_1@3x.png in Resources */,
 				D385C75C1AC2FD9600E21798 /* BuyingMapSearch01.PNG in Resources */,
 				D385C7D91AC2FD9600E21798 /* HouseDetails14@3x.png in Resources */,
@@ -1688,7 +1781,7 @@
 				D385C7511AC2FD9600E21798 /* BuyingConditions Search01@2x.png in Resources */,
 				D385C7D81AC2FD9600E21798 /* HouseDetails14@2x.png in Resources */,
 				D385C82B1AC2FD9600E21798 /* MortgageResults03.PNG in Resources */,
-				D385C7BA1AC2FD9600E21798 /* HouseDetails04@2x.PNG in Resources */,
+				D385C7BA1AC2FD9600E21798 /* HouseDetails04@2x.png in Resources */,
 				D385C7441AC2FD9600E21798 /* BranchDetails05.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1741,20 +1834,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B8933F1AC25E1700B64BE3 /* AppDelegate.m in Sources */,
+				D3F1E8E21ACD171000BFD699 /* LPCollectionTableViewController.m in Sources */,
+				D3EC019A1ACA6D8500CFDE88 /* LPHouseAreaTableViewCell.m in Sources */,
 				D32E2B6C1AC9564B00E2545D /* LPImageLoopTableViewCell.m in Sources */,
+				D3EC01AC1ACC010600CFDE88 /* LPDealDetailViewController.m in Sources */,
 				D385C86A1AC3EEEE00E21798 /* LPHomeViewController.m in Sources */,
 				D32E2B691AC94FDB00E2545D /* LPBranchDetailTableViewController.m in Sources */,
+				D3F1E8E51ACD6E5900BFD699 /* LPH5ViewController.m in Sources */,
 				D32E2B531AC90C9900E2545D /* LPBuyingConditionsViewController.m in Sources */,
+				D3EC01A31ACBC2EC00CFDE88 /* LPPlateTableViewController.m in Sources */,
 				D3B893421AC25E1700B64BE3 /* loupan.xcdatamodeld in Sources */,
+				D3EC01A61ACBE38E00CFDE88 /* LPDealRecordTableViewController.m in Sources */,
+				D3EC019D1ACA8DF000CFDE88 /* LPHouseSearchTableViewCell.m in Sources */,
 				D32E2B5B1AC925BC00E2545D /* LPSettingTableViewCell.m in Sources */,
 				D385C8761AC5150800E21798 /* LPMobileRequest.m in Sources */,
 				D32E2B621AC9308000E2545D /* LPBranchNetworkTableViewController.m in Sources */,
+				D3F1E8E91ACE6EB400BFD699 /* LPAnJieViewController.m in Sources */,
 				D385C8731AC5144C00E21798 /* LPBaseHTTPRequestOperationManager.m in Sources */,
+				D30B06A81ACA52690040C3FD /* LPHouseInformationTableViewCell.m in Sources */,
 				D385C86F1AC3EF2600E21798 /* LPHomeTableViewCell.m in Sources */,
 				D32E2B5F1AC9306900E2545D /* LPBranchNetworkTableViewCell.m in Sources */,
+				D3EC01A91ACBE9C900CFDE88 /* LPDealRecordTableViewCell.m in Sources */,
+				D3EC01A01ACB92F300CFDE88 /* LPHouseDetailTableViewController.m in Sources */,
 				D32E2B571AC9259400E2545D /* LPSettingTableViewController.m in Sources */,
+				D3F1E8EC1ACE73C300BFD699 /* LPUiStyle.m in Sources */,
 				D3B8933C1AC25E1700B64BE3 /* main.m in Sources */,
 				D385C8791AC519B100E21798 /* UIView+AHKit.m in Sources */,
+				D3F1E8DC1ACCE62B00BFD699 /* LPHouseButtomView.m in Sources */,
 				D385C85A1AC3025400E21798 /* LPMainTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

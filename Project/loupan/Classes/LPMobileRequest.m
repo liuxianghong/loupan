@@ -9,12 +9,18 @@
 #import "LPMobileRequest.h"
 #import <JSONKit.h>
 
-#define baseURL @"http://property.mobile-apps.com.hk/"
+#define baseURL @"http://property.mobile-apps.com.hk/realestate/"
 #define kErrorDomain @"https://api.drkon.net/if3/v1/"
 
-#define kMethodsms_access @"area_api.php"
 #define kMethodhouseAdd @"house_add_api.php"
 #define kMethodbranchApi @"branch_api.php"
+#define kMethodhouseApi @"house_api.php"
+#define kMethodareaApi @"area_api.php"
+#define kMethodspaceApi @"space_api.php"
+#define kMethodregionApi @"region_api.php"
+#define kMethodhouse_trade_api @"house_trade_api.php"
+#define kMethodcollection_api @"collection_api.php"
+#define kMethodroll_image_api @"roll_image_api.php"
 
 @interface LPMobileRequest()<NSURLConnectionDataDelegate>
 @property (nonatomic,strong) NSData *reciveData;
@@ -24,19 +30,54 @@
 
 @implementation LPMobileRequest
 
-+ (void)smsAccessWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
-{
-    [self Request:kMethodsms_access WithPost:NO WithParameters:parameters success:success failure:failure];
-}
-
 + (void)houseAddWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
 {
-    [self Request:kMethodhouseAdd WithPost:YES WithParameters:parameters success:success failure:failure];
+    [self Request:kMethodhouseAdd WithPost:NO WithParameters:parameters success:success failure:failure];
 }
 
 + (void)branch_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
 {
     [self Request:kMethodbranchApi WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
++ (void)house_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodhouseApi WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
+//地区列表获取
++ (void)area_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodareaApi WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
+//获取间隔列表
++ (void)space_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodspaceApi WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
+//获取屋苑列表
++ (void)region_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodregionApi WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
+//成交记录列表
++ (void)house_trade_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodhouse_trade_api WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
+//查询收藏列表
++ (void)collection_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodcollection_api WithPost:NO WithParameters:parameters success:success failure:failure];
+}
+
++ (void)roll_image_apiWithParameters: (id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    [self Request:kMethodroll_image_api WithPost:NO WithParameters:parameters success:success failure:failure];
 }
 
 + (void)Request:(NSString *)method WithPost:(BOOL)bo WithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
@@ -63,7 +104,8 @@
                     NSDictionary* dic = [retStr objectFromJSONString];
                     state = [dic objectForKey:@"state"];
                     if ([state integerValue]!=0) {
-                        errorStr = dic[@"data"];
+                        NSDictionary *msg = [dic[@"data"] firstObject];
+                        errorStr = msg[@"msg"];
                         NSError *error = [NSError errorWithDomain:errorStr code:0 userInfo:nil];
                         failure(operation,error);
                     }

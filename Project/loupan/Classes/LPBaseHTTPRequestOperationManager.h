@@ -8,6 +8,11 @@
 
 #import "AFHTTPRequestOperationManager.h"
 
+@interface NSString (Crypt)
+- (NSString *) stringFromMD5;
+- (NSString *) stringToImageUrl;
+@end
+
 @interface LPBaseHTTPRequestOperationManager : AFHTTPRequestOperationManager
 + (LPBaseHTTPRequestOperationManager *)sharedManager;
 - (void)defaultPostWithMethod:(NSString *)method WithParameters:(id)parameters success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;

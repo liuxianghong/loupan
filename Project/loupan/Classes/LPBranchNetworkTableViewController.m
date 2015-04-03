@@ -11,16 +11,20 @@
 #import "LPMobileRequest.h"
 #import "LPBranchDetailTableViewController.h"
 #import <MBProgressHUD.h>
+#import <MJRefresh.h>
 
 @interface LPBranchNetworkTableViewController ()
-
+@property (nonatomic) NSInteger pages;
+@property (nonatomic,strong) NSMutableArray *tableViewArray;
 @end
 
 @implementation LPBranchNetworkTableViewController
 {
-    NSArray *tableViewArray;
+   
     NSInteger indexNext;
     NSInteger currentIndexRow;
+    
+    BOOL isFirst;
 }
 
 - (void)viewDidLoad {
@@ -31,6 +35,21 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    isFirst = YES;
+    self.pages = 1;
+    
+    __weak typeof(self) wself = self;
+    [self.tableView addLegendHeaderWithRefreshingBlock:^{
+        typeof(self) sself = wself;
+        sself.pages = 1;
+        [sself readDataList];
+    }];
+    [self.tableView addLegendFooterWithRefreshingBlock:^{
+        typeof(self) sself = wself;
+        [sself loadMore];
+    }];
+    self.tableViewArray = [[NSMutableArray alloc]init];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -41,22 +60,61 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    if (isFirst) {
+        [self readDataList];
+        isFirst = NO;
+    }
+}
+
+-(void)loadMore
+{
+    if (indexNext == 0) {
+        if (self.view.window) {
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
+            hud.labelText = @"已到最后";
+            hud.mode = MBProgressHUDModeText;
+            [hud hide:YES afterDelay:1.5];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView.footer endRefreshing];
+        });
+    }
+    else
+    {
+        self.pages++;
+        [self readDataList];
+    }
+}
+
+-(void)readDataList
+{
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
     NSDictionary *dic = @{
-                          @"page" : @1,
+                          @"page" : @(self.pages),
                           @"rows" : @10
                           };
     [LPMobileRequest branch_apiWithParameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *array = responseObject[@"data"];
-        tableViewArray = [array copy];
+        if (self.pages==1) {
+            [self.tableViewArray removeAllObjects];
+        }
+        [self.tableViewArray addObjectsFromArray:array];
         NSDictionary *pagesDic = responseObject[@"pages"];
         indexNext = [pagesDic[@"next"] integerValue];
         [self.tableView reloadData];
         [hud hide:YES];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView.footer endRefreshing];
+            [self.tableView.header endRefreshing];
+        });
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         hud.labelText = error.domain;
         hud.mode = MBProgressHUDModeText;
         [hud hide:YES afterDelay:1.5];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView.footer endRefreshing];
+            [self.tableView.header endRefreshing];
+        });
     }];
 }
 
@@ -70,7 +128,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return [tableViewArray count];
+    return [self.tableViewArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -82,7 +140,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LPBranchNetworkTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"branchNetworkCell" forIndexPath:indexPath];
-    [cell setDataDic:[tableViewArray objectAtIndex:indexPath.row]];
+    [cell setDataDic:[self.tableViewArray objectAtIndex:indexPath.row]];
     // Configure the cell...
     
     return cell;
@@ -138,7 +196,7 @@
     if([segue.identifier isEqualToString:@"branchDetailIdentifier"])
     {
         LPBranchDetailTableViewController *vc = segue.destinationViewController;
-        vc.dataDic = [tableViewArray objectAtIndex:currentIndexRow];
+        vc.dataDic = [self.tableViewArray objectAtIndex:currentIndexRow];
     }
 }
 

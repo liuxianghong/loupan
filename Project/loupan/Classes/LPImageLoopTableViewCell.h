@@ -11,4 +11,5 @@
 @interface LPImageLoopTableViewCell : UITableViewCell
 @property (nonatomic ,weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic ,weak) IBOutlet UIPageControl *pageControl;
+-(void)setImageUrlList:(NSArray *)imageArray;
 @end

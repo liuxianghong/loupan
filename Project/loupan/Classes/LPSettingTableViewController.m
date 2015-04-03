@@ -7,12 +7,16 @@
 //
 
 #import "LPSettingTableViewController.h"
+#import "LPH5ViewController.h"
 
 @interface LPSettingTableViewController ()
 @property (nonatomic,strong) IBOutlet UISwitch *switchButton;
 @end
 
 @implementation LPSettingTableViewController
+{
+    NSInteger cellSelected;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,6 +40,14 @@
 #pragma mark - Table view data source
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    cellSelected = indexPath.row;
+    if(cellSelected<3)
+        [self performSegueWithIdentifier:@"h5" sender:nil];
+    else
+    {
+        self.switchButton.on = !self.switchButton.on;
+    }
 }
 //
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -94,14 +106,17 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    //goidentifier
+    if ([segue.identifier isEqualToString:@"h5"]) {
+        LPH5ViewController *vc = segue.destinationViewController;
+        vc.showType = cellSelected;
+    }
 }
-*/
 
 @end

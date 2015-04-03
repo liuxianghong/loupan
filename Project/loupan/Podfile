@@ -8,5 +8,6 @@ pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MBProgressHUD'
 pod 'JSONKit-NoWarning'
+pod 'MJRefresh'
 end
 

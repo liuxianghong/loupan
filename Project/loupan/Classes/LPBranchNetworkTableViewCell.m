@@ -7,6 +7,7 @@
 //
 
 #import "LPBranchNetworkTableViewCell.h"
+#import <UIImageView+WebCache.h>
 
 @implementation LPBranchNetworkTableViewCell
 
@@ -26,5 +27,8 @@
     self.nameLabel.text = dic[@"branch_cname"];
     self.phoneLabel.text = dic[@"branch_tel"];
     self.emileLabel.text = dic[@"branch_email"];
+    
+    NSString *iconStr = dic[@"branch_listimage"];
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:[iconStr stringToImageUrl]] placeholderImage:[UIImage imageNamed:@"houseDefault"]];
 }
 @end

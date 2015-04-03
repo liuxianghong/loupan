@@ -22,6 +22,7 @@ PODS:
     - AFNetworking/NSURLSession
   - JSONKit-NoWarning (1.2)
   - MBProgressHUD (0.9.1)
+  - MJRefresh (1.4.3)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
@@ -30,12 +31,14 @@ DEPENDENCIES:
   - AFNetworking
   - JSONKit-NoWarning
   - MBProgressHUD
+  - MJRefresh
   - SDWebImage
 
 SPEC CHECKSUMS:
-  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
-  JSONKit-NoWarning: fc8d6dd8ec65e303867d1bd274632fc60a4a8ab9
-  MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
+  AFNetworking: 10e85a00bb0f475124e4ff2677bf15693b2c1523
+  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MJRefresh: 6eb09aefa9622f0908fdf42d63c2070478c04c42
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
 COCOAPODS: 0.35.0

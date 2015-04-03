@@ -7,6 +7,7 @@
 //
 
 #import "LPBranchDetailTableViewController.h"
+#import "LPImageLoopTableViewCell.h"
 
 @interface LPBranchDetailTableViewController ()
 @property (nonatomic,weak) IBOutlet UITableViewCell *cell1;
@@ -16,6 +17,8 @@
 @property (nonatomic,weak) IBOutlet UILabel *addresLabel;
 @property (nonatomic,weak) IBOutlet UILabel *phoneLabel;
 @property (nonatomic,weak) IBOutlet UILabel *emailLabel;
+
+@property (nonatomic,weak) IBOutlet LPImageLoopTableViewCell *imageLoopCell;
 @end
 
 @implementation LPBranchDetailTableViewController
@@ -34,7 +37,7 @@
     self.addresLabel.text = self.dataDic[@"branch_address_cn"];
     self.phoneLabel.text = self.dataDic[@"branch_tel"];
     self.emailLabel.text = self.dataDic[@"branch_email"];
-    
+    self.title = self.dataDic[@"branch_cname"];
 }
 
 -(IBAction)backButtonClicked:(id)sender
@@ -47,6 +50,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self.imageLoopCell setImageUrlList:self.dataDic[@"images"]];
+    [super viewDidAppear:animated];
+}
 #pragma mark - Table view data source
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

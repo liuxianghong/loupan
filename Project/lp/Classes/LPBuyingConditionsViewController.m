@@ -55,6 +55,8 @@
     NSArray *searchTableViewArray;
     NSArray *searchAreaArray;
     NSArray *searchSpaceArray;
+    NSArray *searchPriceArray;
+    NSArray *searchAcreageArray;
     
     NSArray *regionTableViewArray;
     NSArray *regionSubTableViewArray;
@@ -82,6 +84,9 @@
     first = YES;
     
     self.searchModel = [[LPBuyingConditionsSearchModel alloc] init];
+    
+    searchPriceArray = @[@[@"不限",@""], @[@"200萬以下",@"0,200"], @[@"200萬-300萬",@"200,300"],@[@"300萬-500萬",@"300,500"], @[@"500萬-800萬",@"500,800"], @[@"800萬-1200萬",@"800,1200"], @[@"1200萬以上",@"1200,999999"]];
+    searchAcreageArray = @[@[@"不限",@""],@[@"500呎以下",@"0,500"],@[@"500呎至800呎",@"500,800"],@[@"800呎至1200呎",@"800,1200"],@[@"1200呎至1500呎",@"1200,1500"],@[@"1500呎至2000呎",@"1500,2000"], @[@"2000呎以上",@"2000,999999"]];
     
     if (self.category == 1) {
         self.title = @"卖盘";
@@ -511,6 +516,9 @@
             break;
         case 4:
         {
+            self.searchPages = 1;
+            self.searchModel.area = searchAcreageArray[indexPath.row][1];
+            [self reloadHouseList];
         }
             break;
         case 5:
@@ -523,7 +531,9 @@
             break;
         case 6:
         {
-            
+            self.searchPages = 1;
+            self.searchModel.price = searchPriceArray[indexPath.row][1];
+            [self reloadHouseList];
         }
             break;
         case 7:
@@ -573,6 +583,7 @@
             break;
         case 4:
         {
+            return [searchAcreageArray count];
         }
             break;
         case 5:
@@ -582,6 +593,7 @@
             break;
         case 6:
         {
+            return [searchPriceArray count];
         }
             break;
         case 7:
@@ -602,7 +614,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (index==0) {
+    if (index==0)
+    {
         LPHouseInformationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HouseInformationcell" forIndexPath:indexPath];
         NSDictionary *dic = [searchTableViewArray objectAtIndex:indexPath.row];
         [cell setDataDic:dic];
@@ -625,12 +638,14 @@
     else
     {
         LPHouseSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"serachCell" forIndexPath:indexPath];
+        
         switch (index) {
             case 3:
             {
                 NSDictionary *dic = [searchAreaArray objectAtIndex:indexPath.row];
                 cell.nameLabel.text = dic[@"district_cname"];
-                if ([self.searchModel.district_code isEqualToString:dic[@"code"]]) {
+                if ([self.searchModel.district_code isEqualToString:dic[@"code"]])
+                {
                     cell.nameLabel.text = [NSString stringWithFormat:@"%@   √",dic[@"district_cname"]] ;
                     cell.nameLabel.textColor = [UIColor blackColor];
                 }
@@ -641,29 +656,57 @@
                 }
             }
                 break;
-            case 5:
+            case 4:
             {
-                NSDictionary *dic = [searchSpaceArray objectAtIndex:indexPath.row];
-                
-                if ([self.searchModel.space_code isEqualToString:dic[@"code"]]) {
-                    cell.nameLabel.text = [NSString stringWithFormat:@"%@   √",dic[@"space_cname"]] ;
+                if ([self.searchModel.area isEqualToString:searchAcreageArray[indexPath.row][1]])
+                {
+                    cell.nameLabel.text = [NSString stringWithFormat:@"%@   √",searchAcreageArray[indexPath.row][0]] ;
                     cell.nameLabel.textColor = [UIColor blackColor];
                 }
                 else
                 {
-                    cell.nameLabel.text = dic[@"space_cname"];
+                    cell.nameLabel.text = searchAcreageArray[indexPath.row][0];
                     cell.nameLabel.textColor = [UIColor darkGrayColor];
                 }
             }
                 break;
+            case 5:
+                {
+                    NSDictionary *dic = [searchSpaceArray objectAtIndex:indexPath.row];
+                    
+                    if ([self.searchModel.space_code isEqualToString:dic[@"code"]]) {
+                        cell.nameLabel.text = [NSString stringWithFormat:@"%@   √",dic[@"space_cname"]] ;
+                        cell.nameLabel.textColor = [UIColor blackColor];
+                    }
+                    else
+                    {
+                        cell.nameLabel.text = dic[@"space_cname"];
+                        cell.nameLabel.textColor = [UIColor darkGrayColor];
+                    }
+                }
+                break;
+            case 6:
+                {
+                    if ([self.searchModel.price isEqualToString:searchPriceArray[indexPath.row][1]])
+                    {
+                        cell.nameLabel.text = [NSString stringWithFormat:@"%@   √",searchPriceArray[indexPath.row][0]] ;
+                        cell.nameLabel.textColor = [UIColor blackColor];
+                    }
+                    else
+                    {
+                        cell.nameLabel.text = searchPriceArray[indexPath.row][0];
+                        cell.nameLabel.textColor = [UIColor darkGrayColor];
+                    }
+                }
+                break;
                 
             default:
                 break;
-        }
+            }
+        
         return cell;
     }
 }
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
